@@ -9,14 +9,20 @@ section {
 .container {
   display: flex;
   justify-content: center;
-  height: 80vh;
   align-items: center;
 }
+
+@media screen and (max-width: 858px) {
+  .screenshots {
+     display: none;
+  }
+}
+
 .screenshots {
   /* display: block; */
-  height: 100%;
+  height: 628px;
   width: 428px;
-  margin-top: 50px;
+  margin-top: 40px;
   background: url(img/home-phones.png);
   background-repeat: no-repeat;
   /* margin-bottom: 130px; */
@@ -59,7 +65,7 @@ section {
 h1 {
   /* font-size: 50px; */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    "Lucida Sans Unicode","Geneva", "Verdana", "sans-serif";
 }
 
 .insta-logo {
@@ -90,7 +96,7 @@ input button {
   border: 1px solid rgba(214, 208, 202, 0.9);
 }
 .submit {
-  background-color: rgba(16, 86, 151, 0.8);
+  background-color: #4cb5f9;
   width: 85%;
   margin-top: 10px;
   padding: 8px 7px;
@@ -124,7 +130,12 @@ hr {
 a {
   text-decoration: none;
   color: #385185;
+  font-weight: normal;
 
+}
+#sign-up{
+  color:#4cb5f9;
+  font-weight: normal;
 }
 .app p {
   text-align: center;
